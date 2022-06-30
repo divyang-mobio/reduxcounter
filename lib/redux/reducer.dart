@@ -1,7 +1,6 @@
 import 'state.dart';
 import 'action.dart';
 
-// class ReduxActions {
   CounterState counterUpdate(CounterState state, dynamic action) {
     if (action == CounterActions.increment) {
       return CounterState(count: state.count + 1);
@@ -11,4 +10,3 @@ import 'action.dart';
       return CounterState(count: state.count);
     }
   }
-// }
